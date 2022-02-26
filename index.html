@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media.net</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <form class="form-container">
+        <div class="form-container_row">
+            <input type="email" class="form-container_row-input" placeholder="Enter your email" required>
+        </div>
+        <div class="form-container_row" >
+            <input type="text" class="form-container_row-input" placeholder="First Name" required>
+            <input type="text" class="form-container_row-input" placeholder="Last Name" required>
+        </div>
+        <div class="form-container_row">
+            <textarea class="form-container_row-input" placeholder="Address" rows=5 required></textarea>
+        </div>
+        <div class="form-container_row">
+            <select class="form-container_row-select" required>
+                <option class="form-container_row-select_option">Select Country</option>
+            </select>
+            <select class="form-container_row-select" required>
+                <option class="form-container_row-select_option">Select State</option>
+            </select>
+            <input type="number" class="form-container_row-input" placeholder="Zip Code" required>
+        </div>
+        <div class="form-container_row">
+            <input type="number" class="form-container_row-input" placeholder="Mobile Number" required>
+            <input type="number" class="form-container_row-input" placeholder="Phone Number" required>
+        </div>
+        <div class="form-container_btn-row">
+            <button type="submit" class="form-container_btn-row_submit">
+                SUBMIT
+            </button>
+        </div>
+    </form>
+</body>
+</html>
