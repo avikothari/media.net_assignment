@@ -56,8 +56,7 @@ const validZipCode = (zipcode) => {
 }
 
 const validPhone = (phone) => {
-  const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-
+  const re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
   return re.test(phone);
 }
 
