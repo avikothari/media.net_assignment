@@ -38,7 +38,6 @@ addEventListener("input", (e) => {
   else if (e.target.id === 'phone')
     validateMobileNumber()
 
-
 });
 
 
