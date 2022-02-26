@@ -1,43 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>media.net</title>
-    <link rel="stylesheet" href="./scss/style.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <form class="form-container">
-        <div class="form-container_row">
-            <input type="email" class="form-container_row-input" placeholder="Enter your email" required>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form class="form-container" id="form">
+      <div class="form-container_row">
+        <div class="input_group">
+          <input
+            id="email"
+            type="text"
+            class="form-container_row-input"
+            placeholder="Enter your email"
+            
+          />
+          <span class="form-container_row-error"></span>
         </div>
-        <div class="form-container_row" >
-            <input type="text" class="form-container_row-input" placeholder="First Name" required>
-            <input type="text" class="form-container_row-input" placeholder="Last Name" required>
+      </div>
+      <div class="form-container_row">
+        <div class="input_group-2">
+          <input
+            id="first_name"
+            type="text"
+            class="form-container_row-input"
+            placeholder="First Name"
+            
+          />
+          <span class="form-container_row-error"></span>
         </div>
-        <div class="form-container_row">
-            <textarea class="form-container_row-input" placeholder="Address" rows=5 required></textarea>
+
+        <div class="input_group-2">
+          <input
+            id="last_name"
+            type="text"
+            class="form-container_row-input"
+            placeholder="Last Name"
+            
+          />
+          <span class="form-container_row-error"></span>
         </div>
-        <div class="form-container_row">
-            <select class="form-container_row-select" required>
-                <option class="form-container_row-select_option">Select Country</option>
-            </select>
-            <select class="form-container_row-select" required>
-                <option class="form-container_row-select_option">Select State</option>
-            </select>
-            <input type="number" class="form-container_row-input" placeholder="Zip Code" required>
+      </div>
+      <div class="form-container_row">
+        <div class="input_group">
+          <textarea
+            id="address"
+            class="form-container_row-input"
+            placeholder="Address"
+            rows="5"
+            
+          ></textarea>
+          <span class="form-container_row-error"></span>
         </div>
-        <div class="form-container_row">
-            <input type="number" class="form-container_row-input" placeholder="Mobile Number" required>
-            <input type="number" class="form-container_row-input" placeholder="Phone Number" required>
+      </div>
+      <div class="form-container_row">
+        <div class="input_group-3">
+          <select class="form-container_row-select"  id="country">
+            <option value="" class="form-container_row-select_option">
+              Select Country
+            </option>
+            <option value="India">India</option>
+          </select>
+          <span class="form-container_row-error"></span>
         </div>
-        <div class="form-container_btn-row">
-            <button type="submit" class="form-container_btn-row_submit">
-                SUBMIT
-            </button>
+
+        <div class="input_group-3">
+          <select class="form-container_row-select"  id="state">
+            <option value ="" class="form-container_row-select_option">
+              Select State 
+            </option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Karanataka">Karanataka</option>
+            <option value="Punjab">Punjab</option>
+          </select>
+          <span class="form-container_row-error"></span>
         </div>
+
+        <div class="input_group-3">
+          <input
+            id="zipcode"
+            type="number"
+            class="form-container_row-input"
+            placeholder="Zip Code"
+            
+          />
+          <span class="form-container_row-error"></span>
+        </div>
+      </div>
+      <div class="form-container_row">
+        <div class="input_group-2">
+          <input
+            id="mobile"
+            type="number"
+            class="form-container_row-input"
+            placeholder="Mobile Number"
+            
+          />
+          <span class="form-container_row-error"
+            >
+          </span>
+        </div>
+
+        <div class="input_group-2">
+          <input
+            id="phone"
+            type="number"
+            class="form-container_row-input"
+            placeholder="Phone Number"
+            
+          />
+          <span class="form-container_row-error"></span>
+        </div>
+      </div>
+      <div class="form-container_btn-row">
+        <button type="submit" class="form-container_btn-row_submit">
+          SUBMIT
+        </button>
+      </div>
     </form>
-</body>
+    <script src="index.js"></script>
+
+  </body>
 </html>
