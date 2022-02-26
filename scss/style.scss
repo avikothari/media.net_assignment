@@ -1,6 +1,6 @@
 $colors: (
   bg-dark: #3b2d4e,
-  text: #fff,
+  light: #fff,
   bg-btn: #e23f04,
   danger: #ff0000
 );
@@ -50,12 +50,12 @@ body {
 }
 
 ::placeholder {
-  color: color(text);
+  color: color(light);
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: color(text);
+  color: color(light);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -65,7 +65,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+  -moz-appearance: lightfield;
 }
 
 select option{
@@ -83,7 +83,7 @@ select option{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin: 1.5rem 1rem;
+    margin: 1rem;
 
     @include for_size("phone") {
       flex-wrap: wrap;
@@ -93,9 +93,9 @@ select option{
       font-size: 16px;
       padding: 12px;
       border-radius: 4px;
-      border: 1px solid color(text);
+      border: 1px solid color(light);
       background: transparent;
-      color: color(text);
+      color: color(light);
       width: 100%;
       outline: none;
       display: block;
@@ -106,20 +106,23 @@ select option{
       font-size: 14px;
     }
   }
+
   &_btn-row {
     display: flex;
     justify-content: center;
     align-items: center;
 
     &_submit {
-      margin: 100px auto 0;
+      cursor: pointer;
+      margin: 50px auto 0;
       width: 75%;
       padding: 12px 24px;
       font-weight: 700;
-      color: color(text);
+      color: color(light);
       background-color: color(bg-btn);
       border: 1px solid color(bg-btn);
       border-radius: 4px;
+      outline: none;
     }
   }
 

@@ -232,6 +232,8 @@ form.addEventListener("submit", (e) => {
   if (isEmailValid && isFirstNameValid && isLastNameValid && isAddressValid
     && isCountryValid && isStateValid && isZipCodeValid && isMobileNumberValid && isPhoneNumberValid) {
     alert('Form Data updated successfully!!')
+    localStorage.removeItem('formData')
+    form.reset()
   }
 
 });

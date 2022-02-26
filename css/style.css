@@ -45,7 +45,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+  -moz-appearance: lightfield;
 }
 
 select option {
@@ -71,7 +71,7 @@ select option {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1rem;
-  margin: 1.5rem 1rem;
+  margin: 1rem;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
@@ -111,7 +111,8 @@ select option {
 }
 
 .form-container_btn-row_submit {
-  margin: 100px auto 0;
+  cursor: pointer;
+  margin: 50px auto 0;
   width: 75%;
   padding: 12px 24px;
   font-weight: 700;
@@ -119,6 +120,7 @@ select option {
   background-color: #e23f04;
   border: 1px solid #e23f04;
   border-radius: 4px;
+  outline: none;
 }
 
 .form-container .input_group {
