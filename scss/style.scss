@@ -132,10 +132,17 @@ select option{
 
   .input_group-2 {
     flex: 1 1 50%;
+
+    @include for_size('phone'){
+      flex: 1 1 100%;
+    }
   }
 
   .input_group-3 {
     flex: 1 1 33.33%;
+    @include for_size('phone'){
+      flex: 1 1 100%;
+    }
   }
 
   .error{

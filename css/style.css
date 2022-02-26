@@ -135,10 +135,26 @@ select option {
           flex: 1 1 50%;
 }
 
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .form-container .input_group-2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
 .form-container .input_group-3 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.33%;
           flex: 1 1 33.33%;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .form-container .input_group-3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
 }
 
 .form-container .error {
